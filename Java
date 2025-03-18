@@ -1,1 +1,3 @@
-JavaScrpit code
+document.addEventListener("DOMContentLoaded", function() {
+    console.log("Morningside Tennis Archive loaded successfully");
+});
