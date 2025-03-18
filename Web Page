@@ -9,7 +9,7 @@
 <body>
     <header>Morningside Tennis Archive</header>
     <nav>
-        <a href="#history">History</a>
+        <a href="history.html">History</a>
         <a href="#pictures">Pictures</a>
         <a href="#coaches">Coaches</a>
         <a href="#records">Records</a>
