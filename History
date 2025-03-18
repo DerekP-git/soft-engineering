@@ -3,22 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Morningside Tennis Archive</title>
+    <title>Morningside Tennis Archive - History</title>
     <link rel="stylesheet" href="Style.css">
 </head>
 <body>
     <header>Morningside Tennis Archive</header>
     <nav>
-        <a href="#history">History</a>
+        <a href="history.html">History</a>
         <a href="#pictures">Pictures</a>
         <a href="#coaches">Coaches</a>
         <a href="#records">Records</a>
     </nav>
+<body>
+    <header>Morningside Tennis Archive - History</header>
     <div class="container">
-        <h2>Welcome to the Morningside Tennis Archive</h2>
-        <p>This is a digital archive dedicated to preserving the history and achievements of the Morningside tennis team. Explore team history, view pictures, learn about past and present coaches, and check out records.</p>
+        <h2>History of Morningside Tennis</h2>
+        <p>(Currently fictional chatgpt team)</p>
+        <p>
+            <p>Founded: 2005</p>
+            <p>Home Court: Thunder Tennis Complex, Maplewood City</p>
+            <p>Team Colors: Blue and Silver</p>
+            <p>Mascot: Ace the Eagle</p>
+
+            
+            <p>2005: The Beginning -
+                The Thunder Aces were founded in 2005 by a group of passionate tennis enthusiasts in Maplewood City. What started as a small local club with just a handful of players quickly grew into a competitive force, thanks to its focus on developing young talent and fostering a community-oriented atmosphere.
+                </p>
+
+            <p>2007: First Regional Championship -
+                After two years of intense training and team-building, the Thunder Aces entered their first regional tennis championship in 2007. Despite being considered underdogs, the team made an impressive run, finishing as runners-up. This marked the beginning of the Thunder Aces reputation for fierce competition and determination.
+                </p>
+            
+            <p>2010: Breakthrough Year -
+                In 2010, the Thunder Aces won their first major tournament: The National Tennis Cup, beating the defending champions in a thrilling final. This victory elevated the team's national standing and drew attention from scouts across the country. The team's captain, Emma Lawson, was named Player of the Year for her exceptional performance.
+                </p>
+               
+            <p>2013: International Expansion -
+                The Thunder Aces made their debut in international tournaments, starting with the European Open. Competing against some of the best teams in the world, the Aces gained valuable experience, eventually finishing in the top 5. This period also saw the rise of a new star: Marcus Steele, a promising young player who became known for his explosive serves and fast court coverage.
+                </p>
+
+            <p>2016: Rivalry with the Storm Strikers -
+                By 2016, the Thunder Aces had firmly established themselves as one of the top teams in the league. That year, they began a fierce rivalry with the Storm Strikers, a team with similar aspirations and a history of high-profile victories. The rivalry became one of the most talked-about in tennis, with many fans tuning in for their intense matchups. The two teams faced off in the finals of multiple tournaments over the years, with the Thunder Aces securing a 3-2 record in those encounters.
+                </p>
+            
+            <p>2020: Dominating the League -
+                By 2020, the Thunder Aces had reached their peak, winning their third National Tennis Cup and securing the top spot in the national rankings. Their consistent dominance was attributed to a combination of experienced veterans and fresh talent. The team's new coach, Alex Rivera, was credited for refining their strategies and pushing them to their full potential.
+                </p>
+
+            <p>2023: Expanding the Legacy -
+                The Thunder Aces started to focus on the development of the next generation of tennis stars, launching their own youth academy in 2023. The academy's aim was to provide world-class coaching and facilities for young players. With many former players returning to mentor the next crop of talent, the Aces solidified their legacy as not just a team, but a foundational part of the tennis community.              
+                </p>
+
+            <p>2025: Present Day -
+                The Thunder Aces remain one of the premier tennis teams in the world, constantly evolving and adapting to new challenges. With a balanced mix of veterans like Emma Lawson (who now plays a key role in mentoring) and emerging stars like Sofia Delgado and Ryan Zhang, the team is well-positioned to continue its success for years to come.
+                </p>
     </div>
-    <footer>© 2025 Morningside Tennis Archive</footer>
-    <script src="script.js"></script>
+    <footer> 2025 Morningside Tennis Archive</footer>
 </body>
 </html>
