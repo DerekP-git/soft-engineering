@@ -1,1 +1,44 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morningside Tennis Coaches</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header>Morningside Tennis Archive</header>
+    <img src="Mustangs_Logo.png" alt="Morningside Logo" class="corner-logo">
+    <nav>
+        <a href="history.html">History</a>
+        <a href="Pictures.html">Pictures</a>
+        <a href="Coaches.html">Coaches</a>
+        <a href="Records.html">Records</a>
+    </nav>
+<div class="container">
+    <h2>Meet Our Current Coaches</h2>
+    
+    <h3>Head Coach</h3>
+    <div class="coach">
+        <img src="Alex-Struck.jpeg" alt="Head Coach Name">
+        <h3>Alex Struck</h3>
+        <p>Bio of the head coach goes here. Include details about their career, achievements, and role in the team.</p>
+    </div>
+    <p><a href="Head Coaches.html">Past Head Coaches</a></p>
+    <hr>
+    <h3>Assistant Coaches</h3>
+    <div class="coach">
+        <img src="Larry-Mason.jpg" alt="Assistant Coach Name">
+        <h3>Larry Mason</h3>
+        <p>Bio of the assistant coach goes here. Include details about their career, achievements, and role in the team.</p>
+    </div>
+    <div class="coach">
+        <img src="Cole-Renken.jpeg" alt="Assistant Coach Name">
+        <h3>Cole Renken</h3>
+        <p>Bio of the assistant coach goes here. Include details about their career, achievements, and role in the team.</p>
+    </div>
+    <p><a href="Assistant coaches.html">Past Assistant Coaches</a></p>
+</div>
+<footer>© 2025 Morningside Tennis Archive</footer>
+</body>
+</html>
