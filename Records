@@ -1,1 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morningside Tennis Records</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header>Morningside Tennis Archive</header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="history.html">History</a>
+        <a href="pictures.html">Pictures</a>
+        <a href="records.html">Records</a>
+    </nav>
+    <div class="container">
+        <h2>Team Records</h2>
+        <p>Explore the achievements and milestones of the Morningside tennis team over the years.</p>
+        
+        <section class="record">
+            <h3>Season Records</h3>
+            <table>
+                <tr>
+                    <th>Year</th>
+                    <th>Wins</th>
+                    <th>Losses</th>
+                    <th>Championships</th>
+                </tr>
+                <tr>
+                    <td>2024</td>
+                    <td>15</td>
+                    <td>5</td>
+                    <td>Conference Runner-up</td>
+                </tr>
+                <tr>
+                    <td>2023</td>
+                    <td>18</td>
+                    <td>2</td>
+                    <td>Conference Champions</td>
+                </tr>
+                <tr>
+                    <td>2022</td>
+                    <td>12</td>
+                    <td>8</td>
+                    <td>Regional Semifinalist</td>
+                </tr>
+            </table>
+        </section>
+        
+        <section class="record">
+            <h3>Notable Players</h3>
+            <div class="player">
+                <img src="player1.jpg" alt="Player 1">
+                <p><strong>John Doe</strong> - 2023 Player of the Year, 50 career wins</p>
+            </div>
+            <div class="player">
+                <img src="player2.jpg" alt="Player 2">
+                <p><strong>Jane Smith</strong> - 2022 Conference MVP, 45 career wins</p>
+            </div>
+        </section>
+    </div>
+    <footer>© 2025 Morningside Tennis Archive</footer>
+    <script src="script.js"></script>
+</body>
+</html>
 
