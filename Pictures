@@ -1,1 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morningside Tennis Picture Gallery</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header>Morningside Tennis Archive</header>
+    <img src="Mustangs_Logo.png" alt="Morningside Logo" class="corner-logo">
+    <nav>
+        <a href="history.html">History</a>
+        <a href="Pictures.html">Pictures</a>
+        <a href="Coaches.html">Coaches</a>
+        <a href="Records.html">Records</a>
+    </nav>
 
+    <div class="container">
+        <h2>Picture Gallery</h2>
+        <p>Browse through our collection of team photos organized by category. You can also upload new pictures for the archive.</p>
+
+        <!-- Folder Section -->
+        <div id="folders">
+            <h3>Photo Folders</h3>
+            <div class="folder">
+                <h4>Team Photos</h4>
+                <a href="#team-photos">View</a>
+            </div>
+            <div class="folder">
+                <h4>Match Highlights</h4>
+                <a href="#match-highlights">View</a>
+            </div>
+            <div class="folder">
+                <h4>Event Photos</h4>
+                <a href="#event-photos">View</a>
+            </div>
+        </div>
+
+        <!-- Upload Section -->
+        <div id="upload">
+            <h3>Upload New Photos</h3>
+            <form id="uploadForm" action="#" method="POST" enctype="multipart/form-data">
+                <label for="photoUpload">Choose a photo to upload:</label>
+                <input type="file" id="photoUpload" name="photo" accept="image/*" required>
+                <button type="submit">Upload</button>
+            </form>
+            <p id="uploadMessage"></p>
+
+            <!-- Image Preview Section -->
+            <div id="imagePreview">
+                <h4>Preview of selected image:</h4>
+                <img id="previewImage" src="" alt="Image Preview" style="max-width: 100%; height: auto; display: none;">
+            </div>
+        </div>
+    </div>
+
+    <footer>© 2025 Morningside Tennis Archive</footer>
+
+    <script src="Javascript.js"></script>
+</body>
+</html>
