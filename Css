@@ -47,9 +47,54 @@ footer {
     text-align: center;
     background-color: #333;
     color: white;
-    text-align: center;
     padding: 15px;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
+    margin-top: 20px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #444;
+    color: white;
+}
+
+/* Player Profiles */
+.player {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.player img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+/* Historic Matches Section */
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+    padding-left: 20px;
 }
