@@ -17,7 +17,7 @@
     <div class="container">
         <h2>Team Records</h2>
         <p>Explore the achievements and milestones of the Morningside tennis team over the years.</p>
-        
+
         <section class="record">
             <h3>Season Records</h3>
             <table>
@@ -45,9 +45,21 @@
                     <td>8</td>
                     <td>Regional Semifinalist</td>
                 </tr>
+                <tr>
+                    <td>2021</td>
+                    <td>14</td>
+                    <td>6</td>
+                    <td>State Finalist</td>
+                </tr>
+                <tr>
+                    <td>2020</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>Quarterfinalist</td>
+                </tr>
             </table>
         </section>
-        
+
         <section class="record">
             <h3>Notable Players</h3>
             <div class="player">
@@ -58,10 +70,23 @@
                 <img src="player2.jpg" alt="Player 2">
                 <p><strong>Jane Smith</strong> - 2022 Conference MVP, 45 career wins</p>
             </div>
+            <div class="player">
+                <img src="player3.jpg" alt="Player 3">
+                <p><strong>Alex Johnson</strong> - 2021 Regional Champion, 40 career wins</p>
+            </div>
+        </section>
+
+        <section class="record">
+            <h3>Historic Matches</h3>
+            <p>Over the years, Morningside tennis has played some incredible matches. Here are a few memorable ones:</p>
+            <ul>
+                <li>2023 Conference Finals: A thrilling 3-2 victory against Rivertown College.</li>
+                <li>2022 Regional Semifinals: A comeback win from 0-2 down against Westside University.</li>
+                <li>2021 State Championship: A hard-fought battle ending in a 2-3 loss, but a remarkable performance.</li>
+            </ul>
         </section>
     </div>
     <footer>© 2025 Morningside Tennis Archive</footer>
     <script src="script.js"></script>
 </body>
 </html>
-
