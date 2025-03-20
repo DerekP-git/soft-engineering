@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Past Assistant Coaches - Morningside Tennis</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header>Morningside Tennis Archive</header>
+    <img src="Mustangs_Logo.png" alt="Morningside Logo" class="corner-logo">
+    <nav>
+        <a href="history.html">History</a>
+        <a href="Pictures.html">Pictures</a>
+        <a href="Coaches.html">Coaches</a>
+        <a href="Records.html">Records</a>
+    </nav>
+
+    <div class="container">
+        <h2>Past Assistant Coaches</h2>
+        <p>Here is a list of past assistant coaches who have contributed to the success of the Morningside Tennis team.</p>
+
+        <ul class="coach-list">
+            <li><strong>Assistant Coach Name 1 (Years Active)</strong> - Short bio and key contributions.</li>
+            <li><strong>Assistant Coach Name 2 (Years Active)</strong> - Short bio and key contributions.</li>
+            <li><strong>Assistant Coach Name 3 (Years Active)</strong> - Short bio and key contributions.</li>
+            <li><strong>Assistant Coach Name 4 (Years Active)</strong> - Short bio and key contributions.</li>
+        </ul>
+    </div>
+
+    <footer>© 2025 Morningside Tennis Archive</footer>
+</body>
+</html>
