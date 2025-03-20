@@ -1,3 +1,47 @@
 document.addEventListener("DOMContentLoaded", function() {
     console.log("Morningside Tennis Archive loaded successfully");
+
+    // Handle upload form submission
+    const uploadForm = document.getElementById('uploadForm');
+    const uploadMessage = document.getElementById('uploadMessage');
+    const fileInput = document.getElementById('photoUpload');
+    const previewImage = document.getElementById('previewImage');
+    const imagePreviewSection = document.getElementById('imagePreview');
+
+    // When a file is selected
+    fileInput.addEventListener('change', function(event) {
+        const file = event.target.files[0];
+        
+        if (file) {
+            // Create a file reader to display the image
+            const reader = new FileReader();
+            
+            reader.onload = function(e) {
+                // Set the preview image source to the file's data URL
+                previewImage.src = e.target.result;
+                previewImage.style.display = 'block'; // Make the image visible
+            };
+            
+            // Read the file as a data URL
+            reader.readAsDataURL(file);
+        }
+    });
+
+    // Handle the form submission
+    uploadForm.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form from submitting the traditional way
+
+        const photoFile = fileInput.files[0];
+        if (photoFile) {
+            // Simulate an upload process
+            uploadMessage.textContent = `Uploading ${photoFile.name}... Please wait.`;
+            
+            // Simulate a delay for uploading (you can replace this with actual upload logic)
+            setTimeout(() => {
+                uploadMessage.textContent = `Successfully uploaded ${photoFile.name}!`;
+            }, 2000); // Simulate 2-second upload time
+        } else {
+            uploadMessage.textContent = "Please select a photo to upload.";
+        }
+    });
 });
