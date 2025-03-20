@@ -8,14 +8,12 @@
 </head>
 <body>
     <header>Morningside Tennis Archive</header>
+    <img src="Mustangs_Logo.png" alt="Morningside Logo" class="corner-logo">
     <nav>
-        <a href="Web Page.html">Home</a>
-        <a href="History.html">History</a>
+        <a href="history.html">History</a>
         <a href="Pictures.html">Pictures</a>
-        <a href="Records.html">Records</a>
         <a href="Coaches.html">Coaches</a>
-        <a href="About.html">About</a>
-        <a href="Contact.html">Contact</a>
+        <a href="Records.html">Records</a>
     </nav>
     <div class="container">
         <h2>Team Records</h2>
