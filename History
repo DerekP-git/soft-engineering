@@ -8,14 +8,14 @@
 </head>
 <body>
     <header>Morningside Tennis Archive</header>
+    <img src="Mustangs_Logo.png" alt="Morningside Logo" class="corner-logo">
     <nav>
         <a href="history.html">History</a>
-        <a href="#pictures">Pictures</a>
-        <a href="#coaches">Coaches</a>
-        <a href="#records">Records</a>
+        <a href="Pictures.html">Pictures</a>
+        <a href="Coaches.html">Coaches</a>
+        <a href="Records.html">Records</a>
     </nav>
 <body>
-    <header>Morningside Tennis Archive - History</header>
     <div class="container">
         <h2>History of Morningside Tennis</h2>
         <p>(Currently fictional chatgpt team)</p>
