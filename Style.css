@@ -1,0 +1,319 @@
+/* Make the whole page a flex column layout */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+body {
+    background-color: #7a0019; /* Morningside dark red */
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main-content {
+    flex-grow: 1; /* Allow this section to take up all available space */
+    padding: 20px;
+  }
+
+header {
+    background-color: #ffffff; /* Black header */
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    background-color: #000000; /* Light gray navigation */
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #ffffff; /* Morningside red for links */
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: black;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.coach img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #000000;
+    color: #fff;
+    font-size: 1em;
+}
+
+.corner-logo {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #444;
+    color: white;
+}
+
+/* Player Profiles */
+.player {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.player img {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+
+/* Historic Matches Section */
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+.album-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.album {
+    width: 200px;
+    text-align: center;
+}
+
+.album img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.album img:hover {
+    transform: scale(1.05);
+}
+
+.album-title {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .photo {
+    width: 200px;
+    overflow: hidden;
+  }
+  
+  .photo img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .photo img:hover {
+    transform: scale(1.05);
+  }
+  /* Lightbox container */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+  }
+  
+  /* Lightbox content (image) */
+  .lightbox-content {
+    max-width: 90%;
+    max-height: 80vh;
+    transition: transform 0.3s ease;
+
+  }
+
+  
+  /* Close button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* Download button */
+  .download-btn {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #7a0019; /* Morningside dark red */
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .download-btn:hover {
+    background-color: #5a0010;
+  }
+  .pagination-controls {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .pagination-controls button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .coaches-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.coach-card {
+    text-decoration: none;
+    color: inherit;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.coach-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.coach-card:hover {
+    transform: scale(1.05);
+}
+
+.coach-name {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.coaches-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.coach-card {
+  text-decoration: none;
+  color: inherit;
+  width: 200px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.coach-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.coach-card:hover {
+  transform: scale(1.05);
+}
+
+.coach-name {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+/* Bio styling */
+#coach-bios {
+  margin-top: 40px;
+}
+
+.coach-bio {
+  display: none;
+  background-color: #fff;
+  color: #000;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+.coach-bio h3 {
+  margin-top: 0;
+}
