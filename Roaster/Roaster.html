@@ -2,28 +2,88 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Morningside Tennis Archive</title>
-    <link rel="stylesheet" href="../Style.css">
+    <title>Morningside Tennis Roster</title>
+    <link rel="stylesheet" href="/Users/ac0023/Documents/Classes/Software Engineering/Project/Style.css">
+
 </head>
 <body>
     <header>Morningside Tennis Archive</header>
-    <img src="../Photos/Mustangs_Logo.png" alt="Morningside Logo" class="corner-logo">
-
     <nav>
-        <a href="../Html/Main.html">Home</a>
-        <a href="../History/History.html">History</a>
-        <a href="../Photos/Html/Pictures.html">Pictures</a>
-        <a href="../Records/Records.html">Records</a>
-        <a href="../Coaches/Coaches.html">Coaches</a>
-        <a href="Roaster.html">Roaster</a>
+        <a href="Main.html">Home</a>
+        <a href="History.html">History</a>
+        <a href="Pictures.html">Pictures</a>
+        <a href="Records.html">Records</a>
+        <a href="Coaches.html">Coaches</a>
+        <a href="Roster.html">Roster</a>
     </nav>
+
     <div class="container">
-        <h2>Current roaster</h2>
-        <p>This is a digital archive dedicated to preserving the history and achievements of the Morningside tennis team. Explore team history, view pictures, learn about past and present coaches, and check out records.</p>
+        <h2>Team Roster by Season</h2>
+
+        <div class="season-selector">
+            <label for="season">Choose a season:</label>
+            <select id="season" onchange="showSeason()">
+                <option value="2025">2024 - 2025</option>
+                <option value="2024">2023 - 2024</option>
+                <option value="2023">2022 - 2023</option>
+            </select>
+        </div>
+
+        <!-- 2025 Roster -->
+        <div id="season-2025" class="season-roster active">
+            <div class="player">
+              <div class="player-info">
+                <img src="../Records/Mathys.jpeg" alt="John Doe">
+                <div>
+                  <div class="player-name">John Doe</div>
+                  <div class="player-year">Senior</div>
+                </div>
+              </div>
+              <button class="more-btn" onclick="toggleDetails('details-john')">⋮</button>
+            </div>
+            <div class="player-details" id="details-john">
+              <p>From Sioux City, IA. Team captain. 2024 All-Conference Honoree. Majoring in Business Admin.</p>
+            </div>
+          </div>
+          
+
+        <!-- 2024 Roster -->
+        <div id="season-2024" class="season-roster">
+            <div class="player">
+                <img src="path/to/player2.jpg" alt="Player 2">
+                <div>
+                    <h3>Chris Smith</h3>
+                    <p>Junior | Omaha, NE</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2023 Roster -->
+        <div id="season-2023" class="season-roster">
+            <div class="player">
+                <img src="path/to/player3.jpg" alt="Player 3">
+                <div>
+                    <h3>Mike Johnson</h3>
+                    <p>Sophomore | Kansas City, MO</p>
+                </div>
+            </div>
+        </div>
     </div>
+
     <footer>© 2025 Morningside Tennis Archive</footer>
-    <script src="../Javascript.js"></script>
+
+    <script>
+        function showSeason() {
+          const selected = document.getElementById("season").value;
+          const rosters = document.querySelectorAll(".season-roster");
+          rosters.forEach(roster => roster.classList.remove("active"));
+          document.getElementById("season-" + selected).classList.add("active");
+        }
+      
+        function toggleDetails(id) {
+          const detailEl = document.getElementById(id);
+          detailEl.classList.toggle("active");
+        }
+      </script>
 </body>
 </html>
- 
