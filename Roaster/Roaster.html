@@ -9,81 +9,78 @@
 <body>
     <header>Morningside Tennis Archive</header>
     <nav>
-        <a href="Main.html">Home</a>
-        <a href="History.html">History</a>
-        <a href="Pictures.html">Pictures</a>
-        <a href="Records.html">Records</a>
-        <a href="Coaches.html">Coaches</a>
+        <a href="../Html/Main.html">Home</a>
+        <a href="../History/History.html">History</a>
+        <a href="../Photos/Html/Pictures.html">Pictures</a>
+        <a href="../Records/Records.html">Records</a>
+        <a href="../Coaches/Coaches.html">Coaches</a>
         <a href="Roster.html">Roster</a>
     </nav>
 
     <div class="container">
         <h2>Team Roster by Season</h2>
 
-        <div class="season-selector">
-            <label for="season">Choose a season:</label>
-            <select id="season" onchange="showSeason()">
-                <option value="2025">2024 - 2025</option>
-                <option value="2024">2023 - 2024</option>
-                <option value="2023">2022 - 2023</option>
-            </select>
-        </div>
+       <!-- Dropdowns -->
+<select id="season" onchange="updateRosterView()">
+  <option value="2025">2024 - 2025</option>
+  <option value="2024">2023 - 2024</option>
+</select>
 
-        <!-- 2025 Roster -->
-        <div id="season-2025" class="season-roster active">
-            <div class="player">
-              <div class="player-info">
-                <img src="../Records/Mathys.jpeg" alt="John Doe">
-                <div>
-                  <div class="player-name">John Doe</div>
-                  <div class="player-year">Senior</div>
-                </div>
-              </div>
-              <button class="more-btn" onclick="toggleDetails('details-john')">⋮</button>
-            </div>
-            <div class="player-details" id="details-john">
-              <p>From Sioux City, IA. Team captain. 2024 All-Conference Honoree. Majoring in Business Admin.</p>
-            </div>
-          </div>
-          
+<select id="gender" onchange="updateRosterView()">
+  <option value="men">Men</option>
+  <option value="women">Women</option>
+</select>
 
-        <!-- 2024 Roster -->
-        <div id="season-2024" class="season-roster">
-            <div class="player">
-                <img src="path/to/player2.jpg" alt="Player 2">
-                <div>
-                    <h3>Chris Smith</h3>
-                    <p>Junior | Omaha, NE</p>
-                </div>
-            </div>
+<!-- Roster Containers -->
+<div id="roster-2025-men" class="season-gender-roster roster-grid active">
+  <div id="season-2025" class="season-roster active">
+    <div class="player-R">
+      <div class="player-info">
+        <img src="../Records/Mathys.jpeg" alt="John Doe">
+        <div>
+          <div class="player-name">John Doe</div>
+          <div class="player-year">Senior</div>
         </div>
-
-        <!-- 2023 Roster -->
-        <div id="season-2023" class="season-roster">
-            <div class="player">
-                <img src="path/to/player3.jpg" alt="Player 3">
-                <div>
-                    <h3>Mike Johnson</h3>
-                    <p>Sophomore | Kansas City, MO</p>
-                </div>
-            </div>
-        </div>
+      </div>
+      <button class="more-btn" onclick="toggleDetails('details-john')">⋮</button>
     </div>
+    <div class="player-details" id="details-john">
+      <p>From Sioux City, IA. Team captain. 2024 All-Conference Honoree. Majoring in Business Admin.</p>
+    </div>
+  </div>
+</div>
 
+<div id="roster-2025-women" class="season-gender-roster roster-grid">
+  <!-- Players for Women’s 2025 -->
+</div>
+
+<div id="roster-2024-men" class="season-gender-roster roster-grid">
+  <!-- Players for Men’s 2024 -->
+</div>
+
+<div id="roster-2024-women" class="season-gender-roster roster-grid">
+  <!-- Players for Women’s 2024 -->
+</div>
     <footer>© 2025 Morningside Tennis Archive</footer>
-
+    
     <script>
-        function showSeason() {
-          const selected = document.getElementById("season").value;
-          const rosters = document.querySelectorAll(".season-roster");
-          rosters.forEach(roster => roster.classList.remove("active"));
-          document.getElementById("season-" + selected).classList.add("active");
-        }
+      function updateRosterView() {
+        const season = document.getElementById("season").value;
+        const gender = document.getElementById("gender").value;
+        const allRosters = document.querySelectorAll(".season-gender-roster");
       
-        function toggleDetails(id) {
-          const detailEl = document.getElementById(id);
-          detailEl.classList.toggle("active");
+        allRosters.forEach(roster => roster.classList.remove("active"));
+      
+        const selectedRoster = document.getElementById(`roster-${season}-${gender}`);
+        if (selectedRoster) {
+          selectedRoster.classList.add("active");
         }
+      }
+      
+      function toggleDetails(id) {
+        document.getElementById(id).classList.toggle("active");
+      }
       </script>
+      
 </body>
 </html>
