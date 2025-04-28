@@ -33,36 +33,117 @@
 
 <!-- Roster Containers -->
 <div id="roster-2025-men" class="season-gender-roster roster-grid active">
-  <div id="season-2025" class="season-roster active">
-    <div class="player-R">
-      <div class="player-info">
-        <img src="../Records/Mathys.jpeg" alt="John Doe">
-        <div>
-          <div class="player-name">John Doe</div>
-          <div class="player-year">Senior</div>
+
+  <!-- Player -->
+    <div id="season-2025" class="season-roster active">
+      <div class="player-R" id="player-Mathys">
+        <div class="player-info">
+          <img src="../Records/Mathys.jpeg" alt="Mathys Arnold">
+          <div class="player-name">Mathys Arnold</div>
         </div>
+        <button class="more-btn" onclick="showDetails('player-Mathys', 'details-Mathys')">⋮</button>
+    </div>
+    
+      <div class="player-details" id="details-Mathys">
+        <h3>Mathys Arnold</h3>
+        <p>Hometown: Charmy, Switzerland</p>
+        <p>Class: FR</p>
+        <button class="more-btn" onclick="hideDetails('player-Mathys', 'details-Mathys')">← Back</button>
       </div>
-      <button class="more-btn" onclick="toggleDetails('details-john')">⋮</button>
     </div>
-    <div class="player-details" id="details-john">
-      <p>From Sioux City, IA. Team captain. 2024 All-Conference Honoree. Majoring in Business Admin.</p>
+
+
+    <!-- Player -->
+    <div id="season-2025" class="season-roster active">
+      <div class="player-R" id="player-Edu">
+        <div class="player-info">
+          <img src="../Roaster/Photos/Edu.jpeg" alt="Eduard Cardelus">
+          <div class="player-name">Eduard Cardelus</div>
+        </div>
+      <button class="more-btn" onclick="showDetails('player-Edu', 'details-Edu')">⋮</button>
     </div>
+  
+      <div class="player-details" id="details-Edu">
+        <h3>Eduard Cardelus</h3>
+        <p>Hometown: Calella, España</p>
+        <p>Class: SR</p>
+        <button class="more-btn" onclick="hideDetails('player-Edu', 'details-Edu')">← Back</button>
+      </div>
+    </div>
+
+    <!-- Player -->
+    <div id="season-2025" class="season-roster active">
+      <div class="player-R" id="player-Alex">
+        <div class="player-info">
+          <img src="../Roaster/Photos/Alex.jpeg" alt="Alexander Castillo">
+          <div class="player-name">Alexander Castillo</div>
+        </div>
+        <button class="more-btn" onclick="showDetails('player-Alex', 'details-Alex')">⋮</button>
+      </div>
+    
+      <div class="player-details" id="details-Alex">
+        <h3>Alexander Castillo</h3>
+        <p>Hometown: Valencia, Venezuela</p>
+        <p>Class: SR</p>
+        <button class="more-btn" onclick="hideDetails('player-Alex', 'details-Alex')">← Back</button>
+      </div>
+    </div>
+
+    <!-- Player -->
+    <div id="season-2025" class="season-roster active">
+      <div class="player-R" id="player-Alexis">
+        <div class="player-info">
+          <img src="../Roaster/Photos/Alexis.jpeg" alt="Alexis Diaz">
+          <div class="player-name">Alexis Diaz</div>
+        </div>
+      <button class="more-btn" onclick="showDetails('player-Alexis', 'details-Alexis')">⋮</button>
+    </div>
+  
+      <div class="player-details" id="details-Alexis">
+        <h3>Alexis Diaz</h3>
+        <p>Hometown: Bassens, France</p>
+        <p>Class: JR</p>
+        <button class="more-btn" onclick="hideDetails('player-Alexis', 'details-Alexis')">← Back</button>
+      </div>
+    </div>
+
+    <!-- Player -->
+    <div id="season-2025" class="season-roster active">
+      <div class="player-R" id="player-Jesse">
+        <div class="player-info">
+          <img src="../Roaster/Photos/Jesse.jpeg" alt="Jesse Gerth">
+          <div class="player-name">Jesse Gerth</div>
+        </div>
+      <button class="more-btn" onclick="showDetails('player-Jesse', 'details-Jesse')">⋮</button>
+    </div>
+  
+      <div class="player-details" id="details-Jesse">
+        <h3>Jesse Gerth</h3>
+        <p>Hometown: Zoetermeer, Netherlands</p>
+        <p>Class: FR</p>
+        <button class="more-btn" onclick="hideDetails('player-Jesse', 'details-Jesse')">← Back</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="roster-2025-women" class="season-gender-roster roster-grid">
+    <!-- Players for Women’s 2025 -->
+  </div>
+
+  <div id="roster-2024-men" class="season-gender-roster roster-grid">
+  <!-- Players for Men’s 2024 -->
+    </div>
+
+  <div id="roster-2024-women" class="season-gender-roster roster-grid">
+    <!-- Players for Women’s 2024 -->
   </div>
 </div>
 
-<div id="roster-2025-women" class="season-gender-roster roster-grid">
-  <!-- Players for Women’s 2025 -->
-</div>
-
-<div id="roster-2024-men" class="season-gender-roster roster-grid">
-  <!-- Players for Men’s 2024 -->
-</div>
-
-<div id="roster-2024-women" class="season-gender-roster roster-grid">
-  <!-- Players for Women’s 2024 -->
-</div>
     <footer>© 2025 Morningside Tennis Archive</footer>
-    
+      
+
+
     <script>
       function updateRosterView() {
         const season = document.getElementById("season").value;
@@ -80,7 +161,18 @@
       function toggleDetails(id) {
         document.getElementById(id).classList.toggle("active");
       }
+    
+      function showDetails(playerId, detailsId) {
+    document.getElementById(playerId).style.display = "none";
+    document.getElementById(detailsId).classList.add("active");
+}
+
+function hideDetails(playerId, detailsId) {
+    document.getElementById(detailsId).classList.remove("active");
+    document.getElementById(playerId).style.display = "flex";
+}
+    
       </script>
-      
+
 </body>
 </html>
