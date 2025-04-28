@@ -23,7 +23,28 @@
        <!-- Dropdowns -->
 <select id="season" onchange="updateRosterView()">
   <option value="2025">2024 - 2025</option>
-  <option value="2024">2023 - 2024</option>
+  <option value="2024">2024 - 2024</option>
+  <option value="2023">2022 - 2023</option>
+  <option value="2022">2021 - 2022</option>
+  <option value="2021">2020 - 2021</option>
+  <option value="2020">2019 - 2020</option>
+  <option value="2019">2018 - 2019</option>
+  <option value="2018">2017 - 2018</option>
+  <option value="2017">2016 - 2017</option>
+  <option value="2016">2015 - 2016</option>
+  <option value="2015">2014 - 2015</option>
+  <option value="2014">2013 - 2014</option>
+  <option value="2013">2012 - 2013</option>
+  <option value="2012">2011 - 2012</option>
+  <option value="2011">2010 - 2011</option>
+  <option value="2010">2009 - 2010</option>
+  <option value="2009">2008 - 2009</option>
+  <option value="2008">2007 - 2008</option>
+  <option value="2007">2006 - 2007</option>
+  <option value="2006">2005 - 2006</option>
+  <option value="2005">2004 - 2005</option>
+  <option value="2004">2003 - 2004</option>
+  <option value="1958">1957 - 1958</option>
 </select>
 
 <select id="gender" onchange="updateRosterView()">
@@ -31,11 +52,11 @@
   <option value="women">Women</option>
 </select>
 
-<!-- Roster Containers -->
+<!-- Men 2025 -->
 <div id="roster-2025-men" class="season-gender-roster roster-grid active">
+  <div class="roster-grid">
 
   <!-- Player -->
-    <div id="season-2025" class="season-roster active">
       <div class="player-R" id="player-Mathys">
         <div class="player-info">
           <img src="../Records/Mathys.jpeg" alt="Mathys Arnold">
@@ -50,11 +71,9 @@
         <p>Class: FR</p>
         <button class="more-btn" onclick="hideDetails('player-Mathys', 'details-Mathys')">← Back</button>
       </div>
-    </div>
 
 
     <!-- Player -->
-    <div id="season-2025" class="season-roster active">
       <div class="player-R" id="player-Edu">
         <div class="player-info">
           <img src="../Roaster/Photos/Edu.jpeg" alt="Eduard Cardelus">
@@ -69,10 +88,8 @@
         <p>Class: SR</p>
         <button class="more-btn" onclick="hideDetails('player-Edu', 'details-Edu')">← Back</button>
       </div>
-    </div>
 
     <!-- Player -->
-    <div id="season-2025" class="season-roster active">
       <div class="player-R" id="player-Alex">
         <div class="player-info">
           <img src="../Roaster/Photos/Alex.jpeg" alt="Alexander Castillo">
@@ -87,10 +104,8 @@
         <p>Class: SR</p>
         <button class="more-btn" onclick="hideDetails('player-Alex', 'details-Alex')">← Back</button>
       </div>
-    </div>
 
     <!-- Player -->
-    <div id="season-2025" class="season-roster active">
       <div class="player-R" id="player-Alexis">
         <div class="player-info">
           <img src="../Roaster/Photos/Alexis.jpeg" alt="Alexis Diaz">
@@ -105,10 +120,8 @@
         <p>Class: JR</p>
         <button class="more-btn" onclick="hideDetails('player-Alexis', 'details-Alexis')">← Back</button>
       </div>
-    </div>
 
     <!-- Player -->
-    <div id="season-2025" class="season-roster active">
       <div class="player-R" id="player-Jesse">
         <div class="player-info">
           <img src="../Roaster/Photos/Jesse.jpeg" alt="Jesse Gerth">
@@ -123,19 +136,476 @@
         <p>Class: FR</p>
         <button class="more-btn" onclick="hideDetails('player-Jesse', 'details-Jesse')">← Back</button>
       </div>
+
+<!-- Player -->
+  <div class="player-R" id="player-Rodri">
+    <div class="player-info">
+      <img src="../Roaster/Photos/Rodri.jpeg" alt="Rodrigo Iraheta">
+      <div class="player-name">Rodrigo Iraheta</div>
+    </div>
+    <button class="more-btn" onclick="showDetails('player-Rodri', 'details-Rodri')">⋮</button>
+</div>
+
+  <div class="player-details" id="details-Rodri">
+    <h3>Rodrigo Iraheta</h3>
+    <p>Hometown: Santa Tecla, El Salvador</p>
+    <p>Class: SR</p>
+    <button class="more-btn" onclick="hideDetails('player-Rodri', 'details-Rodri')">← Back</button>
+  </div>
+
+  
+
+  <!-- Player -->
+  <div class="player-R" id="player-Marcos">
+    <div class="player-info">
+      <img src="../Roaster/Photos/Marcos.jpeg" alt="Marcos Menendez Hervella">
+      <div class="player-name">Marcos Menendez Hervella</div>
+    </div>
+    <button class="more-btn" onclick="showDetails('player-Marcos', 'details-Marcos')">⋮</button>
+</div>
+
+  <div class="player-details" id="details-Marcos">
+    <h3>Marcos Menendez Hervella</h3>
+    <p>Hometown: Pozuelo de Alarcon, Spain</p>
+    <p>Class: FR</p>
+    <button class="more-btn" onclick="hideDetails('player-Marcos', 'details-Marcos')">← Back</button>
+  </div>
+
+  
+
+  <!-- Player -->
+  <div class="player-R" id="player-Santi">
+    <div class="player-info">
+      <img src="../Roaster/Photos/Santi.jpeg" alt="Santiago Minetti">
+      <div class="player-name">Santiago Minetti</div>
+    </div>
+    <button class="more-btn" onclick="showDetails('player-Santi', 'details-Santi')">⋮</button>
+</div>
+
+  <div class="player-details" id="details-Santi">
+    <h3>Santiago Minetti</h3>
+    <p>Hometown: Buenos Aires, Argentina</p>
+    <p>Class: SO</p>
+    <button class="more-btn" onclick="hideDetails('player-Santi', 'details-Santi')">← Back</button>
+  </div>
+
+  
+
+  <!-- Player -->
+  <div class="player-R" id="player-Abhi">
+    <div class="player-info">
+      <img src="../Roaster/Photos/Abhi.jpeg" alt="Abhishek Mohapatra">
+      <div class="player-name">Abhishek Mohapatra</div>
+    </div>
+    <button class="more-btn" onclick="showDetails('player-Abhi', 'details-Abhi')">⋮</button>
+</div>
+
+  <div class="player-details" id="details-Abhi">
+    <h3>Abhishek Mohapatra</h3>
+    <p>Hometown: Bhubaneswar, Odisah, India</p>
+    <p>Class: JR</p>
+    <button class="more-btn" onclick="hideDetails('player-Abhi', 'details-Abhi')">← Back</button>
+  </div>
+
+  
+
+  <!-- Player -->
+  <div class="player-R" id="player-JP">
+    <div class="player-info">
+      <img src="../Records/JP.jpeg" alt="Joao Pedro Pierry Izoldi Costa">
+      <div class="player-name">Joao Pedro Pierry Izoldi Costa</div>
+    </div>
+    <button class="more-btn" onclick="showDetails('player-JP', 'details-JP')">⋮</button>
+</div>
+
+  <div class="player-details" id="details-JP">
+    <h3>Joao Pedro Pierry Izoldi Costa</h3>
+    <p>Hometown: Santos, Brazil</p>
+    <p>Class: JR</p>
+    <button class="more-btn" onclick="hideDetails('player-JP', 'details-JP')">← Back</button>
+  </div>
+
+  
+
+  <!-- Player -->
+  <div class="player-R" id="player-Dalton">
+    <div class="player-info">
+      <img src="../Roaster/Photos/Dalton.jpeg" alt="Dalton Polesky">
+      <div class="player-name">Dalton Polesky</div>
+    </div>
+    <button class="more-btn" onclick="showDetails('player-Dalton', 'details-Dalton')">⋮</button>
+</div>
+
+  <div class="player-details" id="details-Dalton">
+    <h3>Dalton Polesky</h3>
+    <p>Hometown: Miles City, Mont.</p>
+    <p>Class: JR</p>
+    <button class="more-btn" onclick="hideDetails('player-Dalton', 'details-Dalton')">← Back</button>
+  </div>
+
+  
+
+  <!-- Player -->
+  <div class="player-R" id="player-Mikhil">
+    <div class="player-info">
+      <img src="../Roaster/Photos/Mikhil.jpeg" alt="Mikhil Raja">
+      <div class="player-name">Mikhil Raja</div>
+    </div>
+    <button class="more-btn" onclick="showDetails('player-Mikhil', 'details-Mikhil')">⋮</button>
+</div>
+
+  <div class="player-details" id="details-Mikhil">
+    <h3>Mikhil Raja</h3>
+    <p>Hometown: Belvedere Harare, Zimbabwe</p>
+    <p>Class: JR</p>
+    <button class="more-btn" onclick="hideDetails('player-Mikhil', 'details-Mikhil')">← Back</button>
+  </div>
+
+  
+
+  <!-- Player -->
+  <div class="player-R" id="player-Mark">
+    <div class="player-info">
+      <img src="../Records/Mark.jpeg" alt="Mark Trenkle">
+      <div class="player-name">Mark Trenkle</div>
+    </div>
+    <button class="more-btn" onclick="showDetails('player-Mark', 'details-Mark')">⋮</button>
+</div>
+
+  <div class="player-details" id="details-Mark">
+    <h3>Mark Trenkle</h3>
+    <p>Hometown: Lahr, Germany</p>
+    <p>Class: SR</p>
+    <button class="more-btn" onclick="hideDetails('player-Mark', 'details-Mark')">← Back</button>
+  </div>
+
+  
+
+  <!-- Player -->
+  <div class="player-R" id="player-BJ">
+    <div class="player-info">
+      <img src="../Roaster/Photos/Borja.jpeg" alt="Borja Vidal Ribas">
+      <div class="player-name">Borja Vidal Ribas</div>
+    </div>
+    <button class="more-btn" onclick="showDetails('player-BJ', 'details-BJ')">⋮</button>
+</div>
+
+  <div class="player-details" id="details-BJ">
+    <h3>Borja Vidal Ribas</h3>
+    <p>Hometown: Sant Cugat del Valles, Spain</p>
+    <p>Class: FR</p>
+    <button class="more-btn" onclick="hideDetails('player-BJ', 'details-BJ')">← Back</button>
+  </div>
+
+  
+
+  <!-- Player -->
+  <div class="player-R" id="player-Chris">
+    <div class="player-info">
+      <img src="../Roaster/Photos/Chris.jpeg" alt="Chris Wailes">
+      <div class="player-name">Chris Wailes</div>
+    </div>
+    <button class="more-btn" onclick="showDetails('player-Chris', 'details-Chris')">⋮</button>
+</div>
+
+  <div class="player-details" id="details-Chris">
+    <h3>Chris Wailes</h3>
+    <p>Hometown: Council Bluffs, Iowa</p>
+    <p>Class: FR</p>
+    <button class="more-btn" onclick="hideDetails('player-Chris', 'details-Chris')">← Back</button>
+  </div>
+
+  </div>
+</div>
+
+
+<!--Women 2025-->
+<div id="roster-2025-women" class="season-gender-roster roster-grid active">
+    <div class="roster-grid">
+
+  <!-- Player -->
+  <div class="player-R" id="player-Kailee">
+    <div class="player-info">
+      <img src="../Roaster/Photos/2024-2025/Kailee.jpeg" alt="Kaile Bailey">
+      <div class="player-name">Kaile Bailey</div>
+    </div>
+    <button class="more-btn" onclick="showDetails('player-Kailee', 'details-Kailee')">⋮</button>
+</div>
+
+  <div class="player-details" id="details-Kailee">
+    <h3>Kaile Bailey</h3>
+    <p>Hometown: Omaha, Nebraska</p>
+    <p>Class: FR</p>
+    <button class="more-btn" onclick="hideDetails('player-Kailee', 'details-Kailee')">← Back</button>
+  </div>
+
+  <!-- Player -->
+  <div class="player-R" id="player-Taylor">
+    <div class="player-info">
+      <img src="../Roaster/Photos/2024-2025/Taylor.jpeg" alt="Taylor Cole">
+      <div class="player-name">Taylor Cole</div>
+    </div>
+    <button class="more-btn" onclick="showDetails('player-Taylor', 'details-Taylor')">⋮</button>
+</div>
+
+  <div class="player-details" id="details-Taylor">
+    <h3>Taylor Cole</h3>
+    <p>Hometown: Clarinda, Iowa</p>
+    <p>Class: SO</p>
+    <button class="more-btn" onclick="hideDetails('player-Taylor', 'details-Taylor')">← Back</button>
+  </div>
+
+  <!-- Player -->
+  <div class="player-R" id="player-Emma">
+    <div class="player-info">
+      <img src="../Roaster/Photos/2024-2025/Taylor.jpeg" alt="Emma Dahlhoff">
+      <div class="player-name">Emma Dahlhoff</div>
+    </div>
+    <button class="more-btn" onclick="showDetails('player-Emma', 'details-Emma')">⋮</button>
+</div>
+
+  <div class="player-details" id="details-Emma">
+    <h3>Emma Dahlhoff</h3>
+    <p>Hometown: Vermillion, South Dakota</p>
+    <p>Class: SR</p>
+    <button class="more-btn" onclick="hideDetails('player-Emma', 'details-Emma')">← Back</button>
+  </div>
+
+  <!-- Player -->
+  <div class="player-R" id="player-Lauren">
+    <div class="player-info">
+      <img src="../Roaster/Photos/2024-2025/Lauren.jpeg" alt="Lauren Ellis">
+      <div class="player-name">Lauren Ellis</div>
+    </div>
+    <button class="more-btn" onclick="showDetails('player-Lauren', 'details-Lauren')">⋮</button>
+</div>
+
+  <div class="player-details" id="details-Lauren">
+    <h3>Lauren Ellis</h3>
+    <p>Hometown: Spencer, Iowa</p>
+    <p>Class: FR</p>
+    <button class="more-btn" onclick="hideDetails('player-Lauren', 'details-Lauren')">← Back</button>
+  </div>
+  
+
+  <!-- Player -->
+  <div class="player-R" id="player-Sophia">
+    <div class="player-info">
+      <img src="../Roaster/Photos/2024-2025/Sophia.jpeg" alt="Sophia Guntren">
+      <div class="player-name">Sophia Guntren</div>
+    </div>
+    <button class="more-btn" onclick="showDetails('player-Sophia', 'details-Sophia')">⋮</button>
+</div>
+
+  <div class="player-details" id="details-Sophia">
+    <h3>Sophia Guntren</h3>
+    <p>Hometown: Sergeant Bluff, Iowa</p>
+    <p>Class: JR</p>
+    <button class="more-btn" onclick="hideDetails('player-Sophia', 'details-Sophia')">← Back</button>
+  </div>
+
+  <!-- Player -->
+  <div class="player-R" id="player-Jennifer">
+    <div class="player-info">
+      <img src="../Roaster/Photos/2024-2025/Jennifer.jpeg" alt="Jennifer Hubert">
+      <div class="player-name">Jennifer Hubert</div>
+    </div>
+    <button class="more-btn" onclick="showDetails('player-Jennifer', 'details-Jennifer')">⋮</button>
+</div>
+
+  <div class="player-details" id="details-Jennifer">
+    <h3>Jennifer Hubert</h3>
+    <p>Hometown: Omaha, Nebraska</p>
+    <p>Class: FR</p>
+    <button class="more-btn" onclick="hideDetails('player-Jennifer', 'details-Jennifer')">← Back</button>
+  </div>
+
+  <!-- Player -->
+  <div class="player-R" id="player-Line">
+    <div class="player-info">
+      <img src="../Roaster/Photos/2024-2025/Line.jpeg" alt="Line Jensen">
+      <div class="player-name">Line Jensen</div>
+    </div>
+    <button class="more-btn" onclick="showDetails('player-Line', 'details-Line')">⋮</button>
+</div>
+
+  <div class="player-details" id="details-Line">
+    <h3>Line Jensen</h3>
+    <p>Hometown: Humlebaek, Denmark</p>
+    <p>Class: So</p>
+    <button class="more-btn" onclick="hideDetails('player-Line', 'details-Line')">← Back</button>
+  </div>
+  
+  <!-- Player -->
+  <div class="player-R" id="player-Bara">
+    <div class="player-info">
+      <img src="../Roaster/Photos/2024-2025/Bara.jpeg" alt="Barbora Kozouskova">
+      <div class="player-name">Barbora Kozouskova</div>
+    </div>
+    <button class="more-btn" onclick="showDetails('player-Bara', 'details-Bara')">⋮</button>
+</div>
+
+  <div class="player-details" id="details-Bara">
+    <h3>Barbora Kozouskova</h3>
+    <p>Hometown: Brno, Czech Republic</p>
+    <p>Class: SR</p>
+    <button class="more-btn" onclick="hideDetails('player-Bara', 'details-Bara')">← Back</button>
+  </div>
+
+  <!-- Player -->
+  <div class="player-R" id="player-Brooke">
+    <div class="player-info">
+      <img src="../Roaster/Photos/2024-2025/Brooke.jpeg" alt="Brooke Marshall">
+      <div class="player-name">Brooke Marshall</div>
+    </div>
+    <button class="more-btn" onclick="showDetails('player-Brooke', 'details-Brooke')">⋮</button>
+</div>
+
+  <div class="player-details" id="details-Brooke">
+    <h3>Brooke Marshall</h3>
+    <p>Hometown: Bungalow, Queensland, Australia</p>
+    <p>Class: FR</p>
+    <button class="more-btn" onclick="hideDetails('player-Brooke', 'details-Brooke')">← Back</button>
+  </div>
+  
+  <!-- Player -->
+  <div class="player-R" id="player-Addi">
+    <div class="player-info">
+      <img src="../Roaster/Photos/2024-2025/Addi.jpeg" alt="Addison Meyers">
+      <div class="player-name">Addison Meyers</div>
+    </div>
+    <button class="more-btn" onclick="showDetails('player-Addi', 'details-Addi')">⋮</button>
+</div>
+
+  <div class="player-details" id="details-Addi">
+    <h3>Addison Meyers</h3>
+    <p>Hometown: Brandon, South Dakota</p>
+    <p>Class: FR</p>
+    <button class="more-btn" onclick="hideDetails('player-Addi', 'details-Addi')">← Back</button>
+  </div>
+  
+  <!-- Player -->
+  <div class="player-R" id="player-Ellie">
+    <div class="player-info">
+      <img src="../Roaster/Photos/2024-2025/Ellie.jpeg" alt="Ellie Peterson">
+      <div class="player-name">Ellie Peterson</div>
+    </div>
+    <button class="more-btn" onclick="showDetails('player-Ellie', 'details-Ellie')">⋮</button>
+</div>
+
+  <div class="player-details" id="details-Ellie">
+    <h3>Ellie Peterson</h3>
+    <p>Hometown: York, Nebraska</p>
+    <p>Class: FR</p>
+    <button class="more-btn" onclick="hideDetails('player-Ellie', 'details-Ellie')">← Back</button>
+  </div>
+
+  <!-- Player -->
+  <div class="player-R" id="player-Julie">
+    <div class="player-info">
+      <img src="../Roaster/Photos/2024-2025/Julie.jpeg" alt="Julie Raffel">
+      <div class="player-name">Julie Raffel</div>
+    </div>
+    <button class="more-btn" onclick="showDetails('player-Julie', 'details-Julie')">⋮</button>
+</div>
+
+  <div class="player-details" id="details-Julie">
+    <h3>Julie Raffel</h3>
+    <p>Hometown: Rungsted, Denmark</p>
+    <p>Class: SR</p>
+    <button class="more-btn" onclick="hideDetails('player-Julie', 'details-Julie')">← Back</button>
+  </div>
+
+  <!-- Player -->
+  <div class="player-R" id="player-Grace">
+    <div class="player-info">
+      <img src="../Roaster/Photos/2024-2025/Grace.jpeg" alt="Grace Riha">
+      <div class="player-name">Grace Riha</div>
+    </div>
+    <button class="more-btn" onclick="showDetails('player-Grace', 'details-Grace')">⋮</button>
+</div>
+
+  <div class="player-details" id="details-Grace">
+    <h3>Grace Riha</h3>
+    <p>Hometown: Omaha, Nebraska</p>
+    <p>Class: FR</p>
+    <button class="more-btn" onclick="hideDetails('player-Grace', 'details-Grace')">← Back</button>
+  </div>
+
+  <!-- Player -->
+  <div class="player-R" id="player-Stef">
+    <div class="player-info">
+      <img src="../Roaster/Photos/2024-2025/Stef.jpeg" alt="Stefany Simplicio">
+      <div class="player-name">Stefany Simplicio</div>
+    </div>
+    <button class="more-btn" onclick="showDetails('player-Stef', 'details-Stef')">⋮</button>
+</div>
+
+  <div class="player-details" id="details-Stef">
+    <h3>Stefany Simplicio</h3>
+    <p>Hometown: Santo Andre, Brazil</p>
+    <p>Class: FR</p>
+    <button class="more-btn" onclick="hideDetails('player-Stef', 'details-Stef')">← Back</button>
+  </div>
+
+  <!-- Player -->
+  <div class="player-R" id="player-Lidia">
+    <div class="player-info">
+      <img src="../Roaster/Photos/2024-2025/Lidia.jpeg" alt="Lidia Suarez">
+      <div class="player-name">Lidia Suarez</div>
+    </div>
+    <button class="more-btn" onclick="showDetails('player-Lidia', 'details-Lidia')">⋮</button>
+</div>
+
+  <div class="player-details" id="details-Lidia">
+    <h3>Lidia Suarez</h3>
+    <p>Hometown: Caracas, Venezuela</p>
+    <p>Class: SO</p>
+    <button class="more-btn" onclick="hideDetails('player-Lidia', 'details-Lidia')">← Back</button>
+  </div>
+
+  <!-- Player -->
+  <div class="player-R" id="player-Faith">
+    <div class="player-info">
+      <img src="../Roaster/Photos/2024-2025/Faith.jpeg" alt="Faith TenHulzen">
+      <div class="player-name">Faith TenHulzen</div>
+    </div>
+    <button class="more-btn" onclick="showDetails('player-Faith', 'details-Faith')">⋮</button>
+</div>
+
+  <div class="player-details" id="details-Faith">
+    <h3>Faith TenHulzen</h3>
+    <p>Hometown: Sioux City, Iowa</p>
+    <p>Class: JR</p>
+    <button class="more-btn" onclick="hideDetails('player-Faith', 'details-Faith')">← Back</button>
+  </div>
+
+    <!-- Player -->
+    <div class="player-R" id="player-Mia">
+      <div class="player-info">
+        <img src="../Roaster/Photos/2024-2025/Mia.jpeg" alt="Mia Wenzel">
+        <div class="player-name">Mia Wenzel</div>
+      </div>
+      <button class="more-btn" onclick="showDetails('player-Mia', 'details-Mia')">⋮</button>
+    </div>
+
+    <div class="player-details" id="details-Mia">
+      <h3>Mia Wenzel</h3>
+      <p>Hometown: Luverne, Minnesota</p>
+      <p>Class: FR</p>
+      <button class="more-btn" onclick="hideDetails('player-Mia', 'details-Mia')">← Back</button>
     </div>
 
   </div>
+</div>
 
-  <div id="roster-2025-women" class="season-gender-roster roster-grid">
-    <!-- Players for Women’s 2025 -->
+  <div id="roster-2024-men" class="season-gender-roster roster-grid active">
+    <div class="roster-grid">
+
+    </div>
   </div>
 
-  <div id="roster-2024-men" class="season-gender-roster roster-grid">
-  <!-- Players for Men’s 2024 -->
-    </div>
-
-  <div id="roster-2024-women" class="season-gender-roster roster-grid">
+  <div id="roster-2024-women" class="season-gender-roster roster-grid active">
     <!-- Players for Women’s 2024 -->
   </div>
 </div>
@@ -145,20 +615,31 @@
 
 
     <script>
-      function updateRosterView() {
-        const season = document.getElementById("season").value;
-        const gender = document.getElementById("gender").value;
-        const allRosters = document.querySelectorAll(".season-gender-roster");
-      
-        allRosters.forEach(roster => roster.classList.remove("active"));
-      
-        const selectedRoster = document.getElementById(`roster-${season}-${gender}`);
-        if (selectedRoster) {
-          selectedRoster.classList.add("active");
-        }
-      }
-      
-      function toggleDetails(id) {
+function updateRosterView() {
+    // Get selected season and gender
+    const season = document.getElementById('season').value;
+    const gender = document.getElementById('gender').value;
+
+    // Hide all rosters
+    const rosters = document.querySelectorAll('.season-gender-roster');
+    rosters.forEach(roster => {
+        roster.classList.remove('active');
+        roster.style.display = 'none';
+    });
+
+    // Show the correct roster
+    const rosterId = `roster-${season}-${gender}`;
+    const selectedRoster = document.getElementById(rosterId);
+
+    if (selectedRoster) {
+        selectedRoster.classList.add('active');
+        selectedRoster.style.display = 'block'; // Or 'block' if you prefer
+    } else {
+        console.log('Roster not found for:', rosterId);
+    }
+}
+
+function toggleDetails(id) {
         document.getElementById(id).classList.toggle("active");
       }
     
@@ -171,7 +652,10 @@ function hideDetails(playerId, detailsId) {
     document.getElementById(detailsId).classList.remove("active");
     document.getElementById(playerId).style.display = "flex";
 }
-    
+
+window.onload = function() {
+        updateRosterView();
+    };
       </script>
 
 </body>

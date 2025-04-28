@@ -4,107 +4,113 @@ html, body {
   margin: 0;
   display: flex;
   flex-direction: column;
+  font-family: Arial, sans-serif;
 }
+
 body {
-    background-color: #7a0019; /* Morningside dark red */
-    color: white;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  background-color: #7a0019; /* Morningside dark red */
+  color: white;
 }
 
-.main-content {
-    flex-grow: 1; /* Allow this section to take up all available space */
-    padding: 20px;
-  }
-
+/* Header */
 header {
-    background-color: #ffffff; /* Black header */
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 15px;
-    font-size: 24px;
-    font-weight: bold;
+  background-color: #ffffff; /* White header */
+  color: #000000; /* Black text */
+  text-align: center;
+  padding: 15px;
+  font-size: 24px;
+  font-weight: bold;
 }
 
+/* Navigation */
 nav {
-    background-color: #000000; /* Light gray navigation */
-    padding: 10px;
-    text-align: center;
+  background-color: #000000; /* Black navigation */
+  padding: 10px;
+  text-align: center;
 }
 
 nav a {
-    color: #ffffff; /* Morningside red for links */
-    text-decoration: none;
-    font-weight: bold;
-    margin: 0 15px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 15px;
 }
 
 nav a:hover {
-    color: black;
+  color: black;
 }
 
+/* Main content */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+/* Container for pages */
 .container {
-    max-width: 900px;
-    margin: auto;
-    background-color: white;
-    color: black;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  max-width: 900px;
+  margin: auto;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-.coach img {
-    width: 150px;
-    height: auto;
-    border-radius: 8px;
-}
-
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #000000;
-    color: #fff;
-    font-size: 1em;
-}
-
+/* Corner logo */
 .corner-logo {
-    position: absolute;
-    top: 10px; /* Adjust as needed */
-    left: 10px; /* Adjust as needed */
-    width: 100px; /* Adjust size as needed */
-    height: auto;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100px;
+  height: auto;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 1em;
 }
 
 /* Table Styling */
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
 
 table, th, td {
-    border: 1px solid #ddd;
+  border: 1px solid #ddd;
 }
 
 th, td {
-    padding: 10px;
-    text-align: center;
+  padding: 10px;
+  text-align: center;
 }
 
 th {
-    background-color: #444;
-    color: white;
+  background-color: #444;
+  color: white;
 }
 
-/* Player Profiles */
+/* Coach image */
+.coach img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Player Profile */
 .player {
-    display: flex;
-    align-items: center;
-    background-color: #f9f9f9;
-    padding: 10px;
-    border-radius: 5px;
-    margin: 10px 0;
+  display: flex;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
 }
 
 .player img {
@@ -114,156 +120,128 @@ th {
   margin-right: 15px;
 }
 
-/* Historic Matches Section */
+/* Historic Matches (UL styling) */
 ul {
-    list-style-type: square;
-    margin-left: 20px;
-    padding-left: 20px;
+  list-style-type: square;
+  margin-left: 20px;
+  padding-left: 20px;
 }
+
+/* Album Grid */
 .album-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
 .album {
-    width: 200px;
-    text-align: center;
+  width: 200px;
+  text-align: center;
 }
 
 .album img {
-    width: 100%;
-    border-radius: 8px;
-    transition: transform 0.3s;
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s;
 }
 
 .album img:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .album-title {
-    margin-top: 10px;
-    font-weight: bold;
+  margin-top: 10px;
+  font-weight: bold;
 }
 
+/* Gallery Grid */
 .gallery-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  .photo {
-    width: 200px;
-    overflow: hidden;
-  }
-  
-  .photo img {
-    width: 100%;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-    cursor: pointer;
-  }
-  
-  .photo img:hover {
-    transform: scale(1.05);
-  }
-  /* Lightbox container */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.photo {
+  width: 200px;
+  overflow: hidden;
+}
+
+.photo img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.photo img:hover {
+  transform: scale(1.05);
+}
+
+/* Lightbox */
 .lightbox {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    padding-top: 60px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.9);
-  }
-  
-  /* Lightbox content (image) */
-  .lightbox-content {
-    max-width: 90%;
-    max-height: 80vh;
-    transition: transform 0.3s ease;
-
-  }
-
-  
-  /* Close button */
-  .close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #fff;
-    font-size: 40px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  /* Download button */
-  .download-btn {
-    display: block;
-    width: 200px;
-    margin: 20px auto;
-    padding: 10px;
-    background-color: #7a0019; /* Morningside dark red */
-    color: #fff;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 5px;
-  }
-  
-  .download-btn:hover {
-    background-color: #5a0010;
-  }
-  .pagination-controls {
-    margin-top: 20px;
-    text-align: center;
-  }
-  .pagination-controls button {
-    margin: 0 5px;
-    padding: 5px 10px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-
-  .coaches-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
-    margin-top: 30px;
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
 }
 
-.coach-card {
-    text-decoration: none;
-    color: inherit;
-    width: 200px;
-    text-align: center;
-    transition: transform 0.2s;
+.lightbox-content {
+  max-width: 90%;
+  max-height: 80vh;
+  transition: transform 0.3s ease;
 }
 
-.coach-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+/* Lightbox Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-.coach-card:hover {
-    transform: scale(1.05);
+/* Download Button */
+.download-btn {
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #7a0019;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
-.coach-name {
-    margin-top: 10px;
-    font-weight: bold;
-    font-size: 1.1em;
+.download-btn:hover {
+  background-color: #5a0010;
 }
 
+/* Pagination Controls */
+.pagination-controls {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagination-controls button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Coaches Grid */
 .coaches-grid {
   display: flex;
   flex-wrap: wrap;
@@ -298,7 +276,7 @@ ul {
   font-size: 1.1em;
 }
 
-/* Bio styling */
+/* Coach Bios */
 #coach-bios {
   margin-top: 40px;
 }
@@ -318,20 +296,32 @@ ul {
   margin-top: 0;
 }
 
-
-
+/* Season Selector */
 .season-selector {
-    text-align: center;
-    margin: 20px 0;
+  text-align: center;
+  margin: 20px 0;
 }
+
+/* Season Roster */
 .season-roster {
-    display: none;
-    margin-top: 20px;
+  display: none;
+  margin-top: 20px;
 }
+
 .season-roster.active {
-    display: block;
+  display: block;
 }
-/* Player Card Style */
+
+/* Season Gender Roster */
+.season-gender-roster {
+  display: none;
+}
+
+.season-gender-roster.active {
+  display: flex;
+}
+
+/* Player Card (Roster) */
 .player-R {
   width: 100%;
   height: 250px;
@@ -343,42 +333,46 @@ ul {
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  
 }
 
 .player-info img {
   width: 100%;
   height: 200px;
-  object-fit: cover; /* makes the image square/cropped */
+  object-fit: cover;
 }
 
+/* Player Details */
 .player-details {
   width: 200px;
   height: 250px;
-  background: white;
+  background: #f9f9f9;
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 10px;
   box-sizing: border-box;
   display: none;
   flex-direction: column;
-  justify-content: center;
   justify-content: flex-start;
   align-items: center;
   text-align: center;
-  position: relative; /* <-- Add this line */
+  position: relative;
+  font-size: 14px;
+  color: #555;
 }
 
 .player-details.active {
   display: flex;
+  animation: fadeIn 0.3s ease;
 }
 
 .player-details h3 {
-  margin-top: 60px; /* <--- pushes the text lower */
+  margin-top: 60px;
 }
 
+/* More Button */
 .more-btn {
   background: none;
+  color: #ffffff;
   border: none;
   font-size: 24px;
   cursor: pointer;
@@ -387,41 +381,19 @@ ul {
   top: 10px;
 }
 
-
-.more-btn:hover {
-  color: #333;
+.player-details .more-btn {
+  color: rgb(0, 0, 0); /* pure white when player details are open */
 }
 
-.player-details {
-  display: none;
-  background: #f9f9f9;
-  padding: 15px;
-  border-radius: 8px;
-  font-size: 14px;
-  color: #555;
-}
-
-.player-details.active {
-  display: block;
-  animation: fadeIn 0.3s ease;
-}
-
+/* Fade In Animation */
 @keyframes fadeIn {
   from { opacity: 0; transform: scale(0.95); }
   to { opacity: 1; transform: scale(1); }
 }
 
+/* Roster Grid */
 .roster-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);  /* 5 items per row */
-  gap: 20px;  /* Space between items */
-}
-
-
-
-.season-gender-roster {
-  display: none;
-}
-.season-gender-roster.active {
-  display: flex;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
 }
