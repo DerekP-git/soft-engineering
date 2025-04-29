@@ -4,66 +4,57 @@ const path = require('path');
 // === CONFIGURE YOUR PLAYERS HERE ===
 const players = [ 
     {
-      id: 'Gabe-D',
-      name: 'Gabe DeLeo',
-      img: '../Roaster/Photos/2019-2020/Gabe.jpg',
-      hometown: 'Corvallis, Montana',
+      id: 'Katie',
+      name: 'Katie Hanson',
+      img: '../Roaster/Photos/2013-2014/Katie.jpg',
+      hometown: 'Saint Peter, Minnesota',
       playerClass: 'SO',
     }, 
 
       // Add more players here
     {
-      id: 'Jaime-Maz',
-      name: 'Jaime Maza Martin',
-      img: '../Roaster/Photos/Unkonwn.jpg',
-      hometown: 'Madrid, Spain',
-      playerClass: 'FR',
+      id: 'Kathryn',
+      name: 'Kathryn Jones',
+      img: '../Roaster/Photos/2013-2014/Kathryn.jpg',
+      hometown: 'Laramie,Wyoming',
+      playerClass: 'NA',
     }, 
 
       // Add more players here
     {
-      id: 'Jay',
-      name: 'Jay\'Von Mackinney',
-      img: '../Roaster/Photos/Unkonwn.jpg',
-      hometown: 'Blue Springs, Missouri',
-      playerClass: 'FR',
+      id: 'Amanda',
+      name: 'Amanda Przymus',
+      img: '../Roaster/Photos/2013-2014/Amanda.jpg',
+      hometown: 'Rapid City, South Dakota',
+      playerClass: 'SR',
     },
 
       // Add more players here
     {
-      id: 'Jory',
-      name: 'Jory Opp',
-      img: '../Roaster/Photos/2019-2020/Jory.jpg',
-      hometown: 'Glendive, Montana',
+      id: 'Megan',
+      name: 'MeganSolberg',
+      img: '../Roaster/Photos/Unkonwn.jpg',
+      hometown: 'Mitchell, South Dakota',
       playerClass: 'JR',
     }, 
 
       // Add more players here
       {
-        id: 'Bradley',
-        name: 'Bradley Rakich',
-        img: '../Roaster/Photos/2019-2020/Brian.jpg',
-        hometown: 'Dillon, Montana',
-        playerClass: 'FR',
+        id: 'Jeannine',
+        name: 'Jeannine Stocker',
+        img: '../Roaster/Photos/2013-2014/Jeannine.jpg',
+        hometown: 'NA',
+        playerClass: 'NA',
       },  
 
       // Add more players here
     {
-      id: 'Jesus',
-      name: 'Jesus Angel Sanz',
-      img: '../Roaster/Photos/Unkonwn.jpg',
-      hometown: 'Burgos,Spain',
-      playerClass: 'SR',
-    },  
-
-      // Add more players here
-    {
-      id: 'Garret',
-      name: 'Garret Seamans',
-      img: '../Roaster/Photos/2019-2020/Garret.jpg',
-      hometown: 'Gillette, Wyoming',
+      id: 'Audri',
+      name: 'Audri Swisher',
+      img: '../Roaster/Photos/2013-2014/Audri.jpg',
+      hometown: 'NA',
       playerClass: 'JR',
-    },
+    },  
 
 ];
 
@@ -94,7 +85,7 @@ const htmlPath = path.join(__dirname, 'Roaster.html'); // <-- Change this to you
 let htmlContent = fs.readFileSync(htmlPath, 'utf8');
 
 // === FIND THE SPOT TO INSERT (inside #season-2025) ===
-const insertMarker = '<div id="roster-2020-men" class="season-gender-roster roster-grid active">';
+const insertMarker = '<div id="roster-2014-women" class="season-gender-roster roster-grid active">';
 const index = htmlContent.indexOf(insertMarker);
 
 if (index === -1) {
