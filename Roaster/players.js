@@ -4,160 +4,73 @@ const path = require('path');
 // === CONFIGURE YOUR PLAYERS HERE ===
 const players = [
   {
-    id: 'Kailee',
-    name: 'Kaile Bailey',
-    img: '../Roaster/Photos/2024-2025/Kailee.jpeg',
-    hometown: 'Omaha, Nebraska',
-    playerClass: 'FR',
-  },
-  {
-    id: 'Taylor',
-    name: 'Taylor Cole',
-    img: '../Roaster/Photos/2024-2025/Taylor.jpeg',
-    hometown: 'Clarinda, Iowa',
-    playerClass: 'SO',
-  },
-  // Add more players here
-  {
-    id: 'Emma',
-    name: 'Emma Dahlhoff',
-    img: '../Roaster/Photos/2024-2025/Taylor.jpeg',
-    hometown: 'Vermillion, South Dakota',
-    playerClass: 'SR',
-  },
+    id: 'Abby',
+    name: 'Abby Fitzgerald',
+    img: '../Roaster/Photos/2018-2019/Abby.jpg',
+    hometown: 'Fairmont, Minnesota',
+    playerClass: 'FJR',
+  }, 
 
-    // Add more players here
+      // Add more players here
     {
-      id: 'Lauren',
-      name: 'Lauren Ellis',
-      img: '../Roaster/Photos/2024-2025/Lauren.jpeg',
-      hometown: 'Spencer, Iowa',
-      playerClass: 'FR',
-    },
-
-    // Add more players here
-    {
-      id: 'Sophia',
-      name: 'Sophia Guntren',
-      img: '../Roaster/Photos/2024-2025/Sophia.jpeg',
-      hometown: 'Sergeant Bluff, Iowa',
-      playerClass: 'JR',
-    },  
-
-        // Add more players here
-    {
-      id: 'Jennifer',
-      name: 'Jennifer Hubert',
-      img: '../Roaster/Photos/2024-2025/Jennifer.jpeg',
-      hometown: 'Omaha, Nebraska',
-      playerClass: 'FR',
-    }, 
-    
-       // Add more players here
-    {
-      id: 'Line',
-      name: 'Line Jensen',
-      img: '../Roaster/Photos/2024-2025/Line.jpeg',
-      hometown: 'Humlebaek, Denmark',
-      playerClass: 'So',
-    },   
-
-       // Add more players here
-    {
-      id: 'Bara',
-      name: 'Barbora Kozouskova',
-      img: '../Roaster/Photos/2024-2025/Bara.jpeg',
-      hometown: 'Brno, Czech Republic',
-      playerClass: 'SR',
-    }, 
-
-       // Add more players here
-    {
-      id: 'Brooke',
-      name: 'Brooke Marshall',
-      img: '../Roaster/Photos/2024-2025/Brooke.jpeg',
-      hometown: 'Bungalow, Queensland, Australia',
-      playerClass: 'FR',
-    },  
-
-       // Add more players here
-    {
-      id: 'Addi',
-      name: 'Addison Meyers',
-      img: '../Roaster/Photos/2024-2025/Addi.jpeg',
-      hometown: 'Brandon, South Dakota',
-      playerClass: 'FR',
-    }, 
-
-           // Add more players here
-    {
-      id: 'Ellie',
-      name: 'Ellie Peterson',
-      img: '../Roaster/Photos/2024-2025/Ellie.jpeg',
+      id: 'Tenly-Ha',
+      name: 'Tenly Hansen',
+      img: '../Roaster/Photos/2018-2019/Tenly.jpg',
       hometown: 'York, Nebraska',
       playerClass: 'FR',
-    }, 
+    },  
 
-           // Add more players here
+      // Add more players here
     {
-      id: 'Julie',
-      name: 'Julie Raffel',
-      img: '../Roaster/Photos/2024-2025/Julie.jpeg',
-      hometown: 'Rungsted, Denmark',
-      playerClass: 'SR',
-    }, 
-
-           // Add more players here
-    {
-      id: 'Grace',
-      name: 'Grace Riha',
-      img: '../Roaster/Photos/2024-2025/Grace.jpeg',
+      id: 'Kassidy',
+      name: 'Kassidy Hart',
+      img: '../Roaster/Photos/2018-2019/Kassidy.jpg',
       hometown: 'Omaha, Nebraska',
       playerClass: 'FR',
-    }, 
+    },  
 
-           // Add more players here
+      // Add more players here
     {
-      id: 'Stef',
-      name: 'Stefany Simplicio',
-      img: '../Roaster/Photos/2024-2025/Stef.jpeg',
-      hometown: 'Santo Andre, Brazil',
-      playerClass: 'FR',
-    }, 
-
-           // Add more players here
-    {
-      id: 'Lidia',
-      name: 'Lidia Suarez',
-      img: '../Roaster/Photos/2024-2025/Lidia.jpeg',
-      hometown: 'Caracas, Venezuela',
+      id: 'Marilyn',
+      name: 'Marilyn Ruiz',
+      img: '../Roaster/Photos/2018-2019/Marilyn.jpg',
+      hometown: 'Shenandoah, Iowa',
       playerClass: 'SO',
     }, 
 
-           // Add more players here
+      // Add more players here
     {
-      id: 'Faith',
-      name: 'Faith TenHulzen',
-      img: '../Roaster/Photos/2024-2025/Faith.jpeg',
-      hometown: 'Sioux City, Iowa',
-      playerClass: 'JR',
-    }, 
+      id: 'Hanna',
+      name: 'Hanna Schoning',
+      img: '../Roaster/Photos/2018-2019/Hannah.jpg',
+      hometown: 'Arnolds Park, Iowa',
+      playerClass: 'SR',
+    },  
 
-           // Add more players here
+      // Add more players here
     {
-      id: 'Mia',
-      name: 'Mia Wenzel',
-      img: '../Roaster/Photos/2024-2025/Mia.jpeg',
-      hometown: 'Luverne, Minnesota',
-      playerClass: 'FR',
-    }, 
+      id: 'Ons',
+      name: 'Ons Souissi',
+      img: '../Roaster/Photos/2018-2019/Ons.jpg',
+      hometown: 'Ariana, Tunisia',
+      playerClass: 'SR',
+    },  
+
+      // Add more players here
+    {
+      id: 'Sam',
+      name: 'Sam Umberger',
+      img: '../Roaster/Photos/2018-2019/Sam.jpg',
+      hometown: 'Glenwood, Iowa',
+      playerClass: 'SR',
+    },
+
 ];
 
 // === GENERATE HTML FOR EACH PLAYER ===
 function generatePlayerHTML(player) {
   return `
   <!-- Player -->
-  <div id="season-2025" class="season-roster active">
   <div class="player-R" id="player-${player.id}">
     <div class="player-info">
       <img src="${player.img}" alt="${player.name}">
@@ -172,7 +85,6 @@ function generatePlayerHTML(player) {
     <p>Class: ${player.playerClass}</p>
     <button class="more-btn" onclick="hideDetails('player-${player.id}', 'details-${player.id}')">← Back</button>
   </div>
-</div>
 
   `;
 }
@@ -182,7 +94,7 @@ const htmlPath = path.join(__dirname, 'Roaster.html'); // <-- Change this to you
 let htmlContent = fs.readFileSync(htmlPath, 'utf8');
 
 // === FIND THE SPOT TO INSERT (inside #season-2025) ===
-const insertMarker = '<div id="roster-2025-women" class="season-gender-roster roster-grid">';
+const insertMarker = '<div id="roster-2019-women" class="season-gender-roster roster-grid active">';
 const index = htmlContent.indexOf(insertMarker);
 
 if (index === -1) {
