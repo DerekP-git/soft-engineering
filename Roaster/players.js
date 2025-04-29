@@ -2,114 +2,67 @@ const fs = require('fs');
 const path = require('path');
 
 // === CONFIGURE YOUR PLAYERS HERE ===
-const players = [
-  {
-    id: 'WinyouA',
-    name: 'Winyou Asavaruangchai',
-    img: '../Roaster/Photos/2022-2023/Winyou.jpeg',
-    hometown: 'Udon Thani, Thailand',
-    playerClass: 'SO',
-  }, 
-
-      // Add more players here
+const players = [ 
     {
-      id: 'EduC',
-      name: 'Eduard Cardelus',
-      img: '../Roaster/Photos/2022-2023/Edu.jpeg',
-      hometown: 'Calella, Spain',
+      id: 'Gabe-D',
+      name: 'Gabe DeLeo',
+      img: '../Roaster/Photos/2019-2020/Gabe.jpg',
+      hometown: 'Corvallis, Montana',
       playerClass: 'SO',
-    },  
+    }, 
 
       // Add more players here
     {
-      id: 'ChaseC',
-      name: 'Chase Carter',
-      img: '../Roaster/Photos/2022-2023/Chase.jpeg',
-      hometown: 'Norfolk, Nebraska',
-      playerClass: 'FR',
-    },  
-
-      // Add more players here
-    {
-      id: 'Alexander',
-      name: 'Alexander Castillo',
-      img: '../Roaster/Photos/2022-2023/Alex.jpeg',
-      hometown: 'Valencia, Venezuela',
+      id: 'Jaime-Maz',
+      name: 'Jaime Maza Martin',
+      img: '../Roaster/Photos/Unkonwn.jpg',
+      hometown: 'Madrid, Spain',
       playerClass: 'FR',
     }, 
 
       // Add more players here
     {
-      id: 'Rodrigo',
-      name: 'Rodrigo Iraheta',
-      img: '../Roaster/Photos/2022-2023/Rodri.jpeg',
-      hometown: 'Santa Tecla, El Salvador',
-      playerClass: 'SO',
-    },  
+      id: 'Jay',
+      name: 'Jay\'Von Mackinney',
+      img: '../Roaster/Photos/Unkonwn.jpg',
+      hometown: 'Blue Springs, Missouri',
+      playerClass: 'FR',
+    },
 
       // Add more players here
     {
-      id: 'Jaime',
-      name: 'Jaime Maza Martin',
-      img: '../Roaster/Photos/2022-2023/Jaime.jpeg',
-      hometown: 'Madrid, Spain',
+      id: 'Jory',
+      name: 'Jory Opp',
+      img: '../Roaster/Photos/2019-2020/Jory.jpg',
+      hometown: 'Glendive, Montana',
+      playerClass: 'JR',
+    }, 
+
+      // Add more players here
+      {
+        id: 'Bradley',
+        name: 'Bradley Rakich',
+        img: '../Roaster/Photos/2019-2020/Brian.jpg',
+        hometown: 'Dillon, Montana',
+        playerClass: 'FR',
+      },  
+
+      // Add more players here
+    {
+      id: 'Jesus',
+      name: 'Jesus Angel Sanz',
+      img: '../Roaster/Photos/Unkonwn.jpg',
+      hometown: 'Burgos,Spain',
       playerClass: 'SR',
     },  
 
       // Add more players here
     {
-      id: 'Abhishek',
-      name: 'Abhishek Mohapaatra',
-      img: '../Roaster/Photos/2022-2023/Abhi.jpeg',
-      hometown: 'Bhubaneswar, Odisah, India',
-      playerClass: 'FR',
-    },
-
-
-      // Add more players here
-    {
-      id: 'Danny',
-      name: 'Danny O\'Brien',
-      img: '../Roaster/Photos/2022-2023/Daany.jpeg',
-      hometown: 'Longmont, Colorado',
-      playerClass: 'SO',
-    },
-
-      // Add more players here
-    {
-      id: 'JoaoP',
-      name: 'Joao Pedro Pierry Izoldi Costa',
-      img: '../Roaster/Photos/2022-2023/Jp.jpeg',
-      hometown: 'Santos, Brazil',
-      playerClass: 'FR',
-    },
-
-
-      // Add more players here
-    {
-      id: 'Dalton-P',
-      name: 'Dalton Polesky',
-      img: '../Roaster/Photos/2022-2023/Dalton.jpeg',
-      hometown: 'Miles City, Montana',
-      playerClass: 'FR',
-    },
-
-      // Add more players here
-    {
-      id: 'Mikhil-R',
-      name: 'Mikhil Raja',
-      img: '../Roaster/Photos/2022-2023/Mikhil.jpeg',
-      hometown: 'Belvedere Harare, Zimbabwe',
-      playerClass: 'FR',
-    },
-
-      // Add more players here
-    {
-      id: 'Mark-T',
-      name: 'Mark Trenkle',
-      img: '../Roaster/Photos/2022-2023/Mark.jpeg',
-      hometown: 'Lahr, Germany',
-      playerClass: 'SO',
+      id: 'Garret',
+      name: 'Garret Seamans',
+      img: '../Roaster/Photos/2019-2020/Garret.jpg',
+      hometown: 'Gillette, Wyoming',
+      playerClass: 'JR',
     },
 
 ];
@@ -141,7 +94,7 @@ const htmlPath = path.join(__dirname, 'Roaster.html'); // <-- Change this to you
 let htmlContent = fs.readFileSync(htmlPath, 'utf8');
 
 // === FIND THE SPOT TO INSERT (inside #season-2025) ===
-const insertMarker = '<div id="roster-2022-men" class="season-gender-roster roster-grid active">';
+const insertMarker = '<div id="roster-2020-men" class="season-gender-roster roster-grid active">';
 const index = htmlContent.indexOf(insertMarker);
 
 if (index === -1) {
